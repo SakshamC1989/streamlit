@@ -1,5 +1,5 @@
-altair
-numpy
 pandas
-pydeck
-streamlit
+yfinance
+datetime
+math
+scipy
