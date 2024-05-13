@@ -169,7 +169,7 @@ stock = float(stock)
 strike = st.text_input("Enter strike price", 0)
 strike = float(strike)
 
-expiry = st.date_input("Enter Expiry", datetime.date(2019, 7, 6))
+expiry = st.date_input("Enter Expiry", datetime.date(2024, 12, 31))
 dte = expiry - datetime.date.today()
 dte = dte.days
 dte = dte/365
