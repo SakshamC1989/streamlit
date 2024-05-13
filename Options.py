@@ -174,11 +174,11 @@ dte = expiry - datetime.date.today()
 dte = dte.days
 dte = dte/365
 
-rate = st.text_input("Enter interest rate", 0.03)
-rate = float(rate)
+rate = st.slider("Interest Rate %", 0.1, 10.0, 0.1)
+rate = float(rate/100)
 
-vol = st.text_input("Enter implied volatility", 0.03)
-vol = float(vol)
+vol = st.slider("Implied volatility %", 1, 100, 1)
+vol = float(vol/100)
 
 # st.button("Reset", type="primary")
 if st.button("Calculate"):
